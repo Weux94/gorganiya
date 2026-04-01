@@ -1,0 +1,139 @@
+<html lang="uk"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgania - Новий Дизайн</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&amp;display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #27ae60; --dark: #222; --light-gray: #f8f9fa; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--light-gray); 
+            margin: 0; 
+            padding: 0; 
+            color: var(--dark); 
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        
+        h1 { font-weight: 800; font-size: 2.5rem; text-align: center; margin-bottom: 50px; letter-spacing: -1px; }
+
+        .catalog { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 40px; 
+        }
+
+        .card { 
+            background: #fff; 
+            border-radius: 0; /* Прямые углы часто выглядят более строго и дорого */
+            padding: 30px; 
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 4px solid transparent;
+        }
+
+        .card:hover { 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08); 
+            border-bottom-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .image-box { 
+            height: 400px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            margin-bottom: 30px;
+            background: #fdfdfd;
+        }
+
+        .image-box img { max-height: 100%; max-width: 100%; object-fit: contain; }
+
+        .title { font-size: 24px; font-weight: 600; margin-bottom: 10px; text-transform: uppercase; }
+        
+        .description { 
+            font-size: 15px; 
+            color: #666; 
+            line-height: 1.6; 
+            margin-bottom: 25px; 
+            font-weight: 300;
+            flex-grow: 1;
+        }
+
+        .price { font-size: 22px; font-weight: 600; margin-bottom: 25px; color: var(--dark); }
+
+        .btn { 
+            display: inline-block;
+            border: 2px solid var(--dark);
+            color: var(--dark);
+            padding: 15px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn:hover { background: var(--dark); color: #fff; }
+
+        /* МОБИЛЬНАЯ ВЕРСИЯ: Убираем навал */
+        @media (max-width: 768px) {
+            .container { padding: 20px 15px; }
+            .catalog { grid-template-columns: 1fr; gap: 30px; } /* Строго по одной карточке */
+            .card { padding: 20px; }
+            .image-box { height: 450px; } /* Дверь на телефоне должна быть крупной */
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Колекція дверей 2026</h1>
+
+    <div class="catalog">
+        <div class="card">
+            <div class="image-box">
+                <img src="https://e-c.storage.googleapis.com/res/0106307d-c43e-4b7e-a5d2-1a6d84770f57/original" alt="Бескид">
+            </div>
+            <div class="title">Бескид</div>
+            <div class="description">Сучасне прочитання класики. Натуральна текстура та бездоганна геометрія ліній.</div>
+            <div class="price">4 395 ₴</div>
+            <a href="#" class="btn">Дивитись деталі</a>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://e-c.storage.googleapis.com/res/bf41e701-3c52-4bf7-ab22-e63c5c941ea3/original" alt="Говерла">
+            </div>
+            <div class="title">Говерла</div>
+            <div class="description">Стримана елегантність. Модель, що підкреслює статус вашого інтер'єру.</div>
+            <div class="price">4 644₴</div>
+            <a href="#" class="btn">Дивитись деталі</a>
+        </div>
+<div class="card">
+            <div class="image-box">
+                <img src="https://e-c.storage.googleapis.com/res/764df990-9f77-42bc-bf8d-6c21a6d653fa/original" alt="Бескид">
+            </div>
+            <div class="title">Стримба</div>
+            <div class="description">Сучасне прочитання класики. Натуральна текстура та бездоганна геометрія ліній.</div>
+            <div class="price">4 395 ₴</div>
+            <a href="#" class="btn">Дивитись деталі</a>
+        </div>
+<div class="card">
+            <div class="image-box">
+                <img src="https://e-c.storage.googleapis.com/res/7cfb1b11-6e3f-47af-8b6f-c1da651d7d31/original" alt="Бескид">
+            </div>
+            <div class="title">Ґрофа</div>
+            <div class="description">Сучасне прочитання класики. Натуральна текстура та бездоганна геометрія ліній.</div>
+            <div class="price">4 644,00 ₴</div>
+            <a href="#" class="btn">Дивитись деталі</a>
+        </div>
+    </div>
+</div>
+
+
+</body></html>
